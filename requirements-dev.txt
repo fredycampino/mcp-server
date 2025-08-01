@@ -1,0 +1,7 @@
+-r requirements.txt
+pytest
+pytest-asyncio
+# optional extras if you parse HTML or want nicer logs:
+# beautifulsoup4
+# lxml
+# rich

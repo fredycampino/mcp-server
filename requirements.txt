@@ -1,0 +1,16 @@
+# requirements.txt
+
+# FastMCP core and tools
+fastmcp
+
+# File operations (async)
+aiofiles
+
+# Internet access tool dependencies
+requests
+httpx
+duckduckgo-search
+
+# HTML parsing (optional but recommended)
+beautifulsoup4
+lxml

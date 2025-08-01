@@ -1,0 +1,13 @@
+Resources
+
+MCP server 
+https://modelcontextprotocol.io/docs/getting-started/intro
+https://modelcontextprotocol.io/docs/learn/architecture
+https://modelcontextprotocol.io/docs/learn/server-concepts
+https://modelcontextprotocol.io/docs/learn/client-concepts
+
+FASTMCP
+https://gofastmcp.com/servers/server
+https://gofastmcp.com/servers/tools
+
+https://gofastmcp.com/clients/client
