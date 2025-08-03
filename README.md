@@ -57,6 +57,7 @@ To use this MCP server with CLINE, follow these steps:
     }
   }
 }
+```
 
 ## Connecting with LM Studio
 
@@ -75,6 +76,7 @@ To connect this MCP server to **LM Studio**, follow these steps:
     }
   }
 }
+```
 
 ## Connecting with Cursor
 
@@ -93,8 +95,7 @@ To connect this MCP server to **Cursor**, follow these steps:
     }
   }
 }
-
-
+```
 
 ## Add Your Own Tool Module
 
@@ -142,4 +143,4 @@ TOOLS = [
     get_server_info, # 👈 Add your new function
     get_user_id      # 👈 Add your other new function
 ]
-
+```
