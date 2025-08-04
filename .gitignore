@@ -114,5 +114,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# private 
 tools/wim_server.py
 tools/wim_tools.py
+prompt.txt
