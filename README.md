@@ -97,6 +97,29 @@ To connect this MCP server to **Cursor**, follow these steps:
 }
 ```
 
+## Connecting with Codex CLI
+
+Codex CLI reads MCP server definitions from `~/.codex/config.toml` under the `mcp_servers` table.
+
+This project can run in **stdio** mode, which is what Codex expects for MCP servers it launches as subprocesses.
+
+Add something like this to your `~/.codex/config.toml`:
+
+```toml
+[mcp_servers.local-mcp]
+command = "bash"
+args = [
+  "-lc",
+  "/path/to/mcp-server/.venv/bin/python /path/to/mcp-server/local_mcp.py"
+]
+env = { MCP_TRANSPORT="stdio", MCP_ALLOWED_ROOTS="/path/to/checkhere,/tmp" }
+```
+
+Notes:
+- Use `MCP_ALLOWED_ROOTS` to control which filesystem roots the file tools can access.
+- Replace `/path/to/mcp-server` and `/path/to/checkhere` with your local absolute paths.
+- If you want the HTTP endpoint instead, run `python local_mcp.py` (default transport is `sse`).
+
 ## Add Your Own Tool Module
 
 Extending the server with your own tools is straightforward. Here’s how to add a new module called `x_tools.py`:
