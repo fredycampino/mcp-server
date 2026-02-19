@@ -12,7 +12,7 @@ def _load_allowed_roots() -> list[str]:
     Load allowed filesystem roots from environment.
 
     - MCP_ALLOWED_ROOTS: comma-separated list of paths.
-      Example: "/data,/home/fede/develop/py/mcp"
+      Example: "/data,/path/to/project"
     - If not set, defaults to the project root (parent of `tools/`).
     """
     raw = (os.environ.get("MCP_ALLOWED_ROOTS") or "").strip()

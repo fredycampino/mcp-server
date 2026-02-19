@@ -32,7 +32,7 @@ Herramientas probadas:
 
 ## Notas
 
-- En este entorno hay dos roots configurados: `0:/home/fede/develop/checkhere` y `1:/tmp`.
+- En este entorno hay dos roots configurados: `0:/path/to/checkhere` y `1:/tmp`.
 - `overwrite_file` se comporta como "upsert" (sobrescribe si existe y crea si no existe).
 - Pruebas de red afectadas por restricciones de certificados/conectividad del entorno.
 

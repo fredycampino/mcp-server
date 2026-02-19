@@ -110,13 +110,14 @@ Add something like this to your `~/.codex/config.toml`:
 command = "bash"
 args = [
   "-lc",
-  "/home/fede/develop/py/mcp/.venv/bin/python /home/fede/develop/py/mcp/local_mcp.py"
+  "/path/to/mcp-server/.venv/bin/python /path/to/mcp-server/local_mcp.py"
 ]
-env = { MCP_TRANSPORT="stdio", MCP_ALLOWED_ROOTS="/home/fede/develop/py/mcp,/tmp" }
+env = { MCP_TRANSPORT="stdio", MCP_ALLOWED_ROOTS="/path/to/checkhere,/tmp" }
 ```
 
 Notes:
 - Use `MCP_ALLOWED_ROOTS` to control which filesystem roots the file tools can access.
+- Replace `/path/to/mcp-server` and `/path/to/checkhere` with your local absolute paths.
 - If you want the HTTP endpoint instead, run `python local_mcp.py` (default transport is `sse`).
 
 ## Add Your Own Tool Module
